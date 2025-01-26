@@ -9,10 +9,10 @@
 
 ## Navigation
 
-- `h` / <backspace> - Move left  
-- `j` / <enter> - Move down  
+- `h / <backspace>` - Move left  
+- `j / <enter>` - Move down  
 - `k` - Move up  
-- `l` / <space> - Move right  
+- `l / <space>` - Move right  
 
 ## Editing
 
