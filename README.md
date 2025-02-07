@@ -1,60 +1,77 @@
-# My Vim Cheatsheet 
+# My Vim Cheatsheet
 
 ## Exiting
-
 - `:q` - Quit  
 - `:w` - Save (write)  
 - `:wq` / `:x` - Save and quit  
-- `:q!` - Quit without saving
+- `:q!` - Quit without saving  
+
+---
 
 ## Navigation
-
-- `h / <backspace>` - Move left  
-- `j / <enter>` - Move down  
+- `h` / `<backspace>` - Move left  
+- `j` / `<enter>` - Move down  
 - `k` - Move up  
-- `l / <space>` - Move right
-  
+- `l` / `<space>` - Move right  
+
 - `w` - Next word  
-- `b` - Back “word” :)  
+- `b` - Back to the previous word  
 - `e` - Next last letter of the word  
-- `ge` - Last letter of the previous word   
+- `ge` - Last letter of the previous word  
+
+---
 
 ## Editing
-
 - `a` - Append from current position  
-- `A` - Append from end of line  
+- `A` - Append from the end of the line  
 - `i` - Insert mode  
-- `o` - Next line in insert mode  
-- `O` - Previous line in insert mode
-- `x` - delete character without entering insert mode
-- `s` - Delete character & enter insert mode  
-- `S` - Delete line & enter insert mode
-- `dd` - delete current line 
-- `C` - Delete from current position till the EOL & enter insert mode  
+- `o` - Insert a new line below and enter insert mode  
+- `O` - Insert a new line above and enter insert mode  
+- `x` - Delete character without entering insert mode  
+- `s` - Delete character and enter insert mode  
+- `S` - Delete the entire line and enter insert mode  
+- `dd` - Delete the current line  
+- `C` - Delete from the current position till the end of the line (EOL) and enter insert mode  
 - `r` - Replace one character without entering insert mode  
-- `R` - Enter replace mode until Escape is pressed  
+- `R` - Enter replace mode until `Escape` is pressed  
 - `u` - Undo changes  
-- `<Ctrl> + r` - Redo changes
+- `<Ctrl> + r` - Redo changes  
 
-## Copy & Paste 
+---
 
-- `yy` - Copy current line  
-- `p` - Paste next line  
-- `P` - Paste in current line  
-- `"+p` (anti-clockwise) - Paste from system clipboard  
-- `"+y` (anti-clockwise) - Copy to system clipboard  
+## Copy & Paste
+- `yy` - Copy the current line  
+- `p` - Paste below the current line  
+- `P` - Paste above the current line  
+- `"+p` - Paste from the system clipboard (anti-clockwise)  
+- `"+y` - Copy to the system clipboard (anti-clockwise)  
+
+---
 
 ## Scroll
+- `<Ctrl> + u` - Scroll half a page up  
+- `<Ctrl> + d` - Scroll half a page down  
+- `<Ctrl> + b` - Scroll a full page up  
+- `<Ctrl> + f` - Scroll a full page down  
 
-- `<Ctrl> + u` - Half page up  
-- `<Ctrl> + d` - Half page down  
-- `<Ctrl> + b` - Full page up  
-- `<Ctrl> + f` - Full page down  
+- `zz` - Center the current line  
+- `zt` - Move the current line to the top of the screen  
+- `zb` - Move the current line to the bottom of the screen  
 
-## Quick Move  
-- `0` - Start of line  
-- `^` - Start of line after whitespace  
-- `$` - End of line  
+---
 
+## Quick Move
+- `gg` - Go to the first line  
+- `G` - Go to the last line  
+- `:line_number` - Go to a specific line number  
 
-~ road under construction..
+- `0` - Move to the start of the line  
+- `^` - Move to the start of the line after whitespace  
+- `$` - Move to the end of the line  
+
+- `fc` - Go forward to character `c` in the line  
+- `Fc` - Go backward to character `c` in the line  
+
+---
+
+~ Road under construction..
