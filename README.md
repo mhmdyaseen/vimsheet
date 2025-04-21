@@ -1,5 +1,11 @@
 # My Vim Cheatsheet
 
+## Modes
+- `i` - Insert mode
+- `v` - Visual mode
+- `ESC` - Normal mode
+- `:` - Command mode
+
 ## Exiting
 - `:q` - Quit  
 - `:w` - Save (write)  
@@ -70,7 +76,19 @@
 - `$` - Move to the end of the line  
 
 - `fc` - Go forward to character `c` in the line  
-- `Fc` - Go backward to character `c` in the line  
+- `Fc` - Go backward to character `c` in the line
+
+## Search & Replace
+- `/pattern` - Search forward for "pattern"  
+- `?pattern` - Search backward for "pattern"  
+- `n` - Repeat last search forward  
+- `N` - Repeat last search backward  
+- `*` - Search for the word under the cursor  
+- `#`- Search backward for the word under the cursor  
+
+- `:%s/foo/bar/g` - Replace all "foo" with "bar" in entire file  
+- `:1,10s/foo/bar/g` - Replace in lines 1 to 10  
+- `:%s/foo/bar/gc` - Replace with confirmation  
 
 ---
 
